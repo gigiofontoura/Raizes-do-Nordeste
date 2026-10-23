@@ -1,12 +1,16 @@
 @import url("styles/header.css");
+@import url("styles/footer.css");
+@import url("styles/stylemenu.css");
 
 :root {
-    --cor-principal: #907761;
+    --marrom: #af957e;
     --branco: #ffffffda;
-
+    --marrom-escuro: #493524;
+    --tamanho-pratos: 200px;
 }
 
 body{
-    background-color: var(--cor-principal);
+    background-color: var(--marrom);
+
 }
 

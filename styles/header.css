@@ -36,3 +36,16 @@
 .botao_menu:checked ~.lista_menu{
     display:block;
 }
+
+.menu_categorias, .lista_categorias{
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.menu_categorias{
+    color:#3d2d1f;
+}
+
+.lista_categorias{
+    color:var(--marrom)
+}

@@ -1,12 +1,15 @@
 @import url("styles/header.css");
 @import url("styles/footer.css");
 @import url("styles/stylemenu.css");
+@import url("styles/fidelidade.css");
 
 :root {
-    --marrom: #af957e;
+    --marrom: #AFA099;
     --branco: #ffffffda;
     --marrom-escuro: #493524;
+    --verde-escuro: #365B57;
     --tamanho-pratos: 200px;
+    --fonte-texto: Georgia, 'Times New Roman', Times, serif;
 }
 
 body{

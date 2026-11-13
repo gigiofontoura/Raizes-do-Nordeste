@@ -1,0 +1,89 @@
+ 
+h2{
+    display: block;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+    font-weight: bold;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: var(--marrom-escuro);
+}
+ 
+.fidelidade_container {
+    max-width: 700px;
+    margin: 20px auto 60px;
+    padding: 32px 28px;
+    background-color: var(--branco);
+    border-radius: 20px;
+    box-shadow: 0 6px 18px rgba(73, 53, 36, 0.18);
+}
+
+
+#fidelidade_inicio{
+    text-align: center;
+    font-weight: bold;
+    color: var(--marrom-escuro); 
+    line-height: 1.55;
+}
+ 
+#fidelidade_botao{
+    padding: 12px 28px;
+    border: none;
+    border-radius: 40px;
+    background-color: var(--marrom-escuro);
+    color: var(--branco);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#fidelidade_botao:hover {
+    background-color: #331F16;
+}
+ 
+.cadastro_botao {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 13px 26px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    transition: all 0.2s;
+    letter-spacing: -0.2px;
+}
+ 
+.beneficios{
+    margin-top: 24px;
+    padding: 20px 24px;
+    background-color: #f3ebe2;                      
+    border-radius: 12px;
+}
+
+.beneficios h3 {
+    margin: 0 0 8px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    color: var(--marrom-escuro);
+}
+
+.beneficios p {
+    margin: 0 0 16px;
+    line-height: 1.55;
+    color: #5b4636;
+}
+ 
+.beneficios.mostrar{
+    display:block
+}
+
+.cadastro_botao {
+    background-color: var(--marrom-escuro);
+    color: var(--branco);
+}

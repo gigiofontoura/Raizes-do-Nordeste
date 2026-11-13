@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styles/stylemenu.css">
+    <link rel="stylesheet" href="styles/cardapio.css">
 </head>
 <body>
          <header class="cabeçalho">
@@ -22,7 +22,7 @@
                         <a href="cardapio.html" class="menu_links">Cardápio</a>
                     </li>
                     <li class="lista_categorias">
-                        <a href="#" class="menu_links">Fidelidade</a>
+                        <a href="fidelidade.html" class="menu_links">Fidelidade</a>
                     </li>
                     <li class="lista_categorias">
                         <a href="#" class="menu_links">Quem somos</a>
@@ -34,41 +34,78 @@
             </div>
          </header>
 
-    <h1> Faça seu pedido! </h1>     
+    <h1> Faça seu pedido! </h1>
+    <div class="layout">     
 
-    <div class="container-cardapio">
+    <main class="container-cardapio">
         <article>
         <img src="assets/carne_sol.png" alt=""> 
+        <div class="elemento">
         <h3>Carne de Sol</h3>
+        <strong class="preco"> R$ 35,00 </strong>
         <p> Um suculento prato que ressalta o sabor da carne bovina. Saboreie uma deliciosa carne de sol com tiras de cebola e explore seu sabor único e autêntico.</p>
+        <button type="button" class="btn-adicionar">Adicionar ao pedido</button>
+        </div>
         </article>
         <article> 
         <img src="assets/baiao-de-dois.png" alt="">
+        <div class="elemento">
         <h3>Baião de Dois</h3>
+        <strong class="preco"> R$ 25,00 </strong>
         <p> Uma deliciosa receita que une nossos queridinhos da gastronomia brasileira: arroz e feijão com um toque único que o faz ser apreciado por todo nosso país!  </p>
+        <button type="button" class="btn-adicionar">Adicionar ao pedido</button>
+        </div>
         </article>
         <article> 
         <img src="assets/moqueca_baiana.png" alt=""> 
+        <div class="elemento">
         <h3>Moqueca Baiana</h3>
+        <strong class="preco"> R$ 30,00 </strong>
         <p> Famosa por seu sabor marcante do azeite de dendê e leite de coco, onde postas suculentas de peixe mergulham em um leve toque cítrico de limão.  </p>
+        <button type="button" class="btn-adicionar">Adicionar ao pedido</button>
+        </div>
         </article>
         <article> 
         <img src="assets/acaraje.png" alt="">
+        <div class="elemento">
         <h3>Acarajé</h3>
+        <strong class="preco"> R$ 20,00 </strong>
         <p> Crocante por fora e macio por dentro. Feito de massa de feijão-fradinho frita no azeite de dendê, garante uma explosão de sabores e tradição a cada mordida.</p>
+        <button type="button" class="btn-adicionar">Adicionar ao pedido</button>
+        </div>
         </article>
         <article> 
         <img src="assets/arroz-de-cuxa.png" alt="">
+        <div class="elemento">
         <h3>Arroz de Cuxa</h3>
+        <strong class="preco"> R$ 25,00 </strong>
         <p> Um clássico que une o sabor marcante do cuxá, feito com vinagreira, ao arroz soltinho e a temperos especiais.  </p>
+        <button type="button" class="btn-adicionar">Adicionar ao pedido</button>
+        </div>
         </article>
         <article> 
         <img src="assets/sarapatel.png" alt="">
+        <div class="elemento">
         <h3>Sarapatel</h3>
+        <strong class="preco"> R$ 30,00 </strong>
         <p> Preparado com miúdos suínos e temperos marcantes. Um prato saboroso que aquece o paladar com seu caldo rico e bem encorpado. </p>
+        <button type="button" class="btn-adicionar">Adicionar ao pedido</button>
+        </div>
         </article>
+
+    </main>
+
+    <aside class="container-carrinho" aria-label="Carrinho de compras">
+        <h2>Seu pedido</h2>
+
+        <p>Itens adicionados ao pedido:</p>
+        <ul class="lista-itens">        
+        </ul>
+        <strong id="total">Total: R$ 0,00</strong>
+        <button type="button" class="btn-finalizar">Finalizar pedido</button>
+    </aside>
 
     </div>
     
-</body>z
+</body>
 </html>

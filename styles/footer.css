@@ -1,7 +1,44 @@
 .rodape{
-    background-color: var(--verde-escuro);
-    margin-top: 80px;
-    padding-top: 28px;
-    padding-bottom: 28px;
+    background-color: var(--marrom-escuro);
+    color: var(--branco);
+    text-align: center;
+    padding: 36px 20px 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
+.rodape_marca{
+    margin: 0 0 6px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.rodape_texto{
+    margin: 0 0 18px;
+    font-style: italic;
+    opacity: 0.85;
+}
+
+.rodape_dados{
+    margin: 0 0 20px;
+    font-size: 0.85rem;
+    opacity: 0.85;
+}
+
+.rodape_dados a{
+    color: inherit;
+    text-decoration: underline;
+}
+
+.rodape_dados a:hover{
+    opacity: 0.8;
+}
+
+.rodape_copy{
+    margin: 0 auto;
+    max-width: 700px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.8rem;
+    opacity: 0.7;
 }

@@ -2,6 +2,7 @@
 @import url("styles/footer.css");
 @import url("styles/stylemenu.css");
 @import url("styles/fidelidade.css");
+@import url("styles/cadastro.css");
 
 :root {
     --marrom: #AFA099;

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Raízes do Nordeste</title>
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styles/cadastro.css">
+        
+    
+    </head>
+
+    <body>
+        <header class="cabeçalho">
+            <a href="index.html" class="marca">Raízes do Nordeste</a>
+
+            <nav class="container" aria-label="Menu principal">
+                <input type="checkbox" id="menu" class="botao_menu">
+                <label for="menu">
+                    <span class="menu-burguer container-imagem"></span>
+                </label>
+                <ul class="lista_menu">
+                    <li class="menu_categorias">Categorias</li>
+                    <li class="lista_categorias">
+                        <a href="cardapio.html" class="menu_links">Cardápio</a>
+                    </li>
+                    <li class="lista_categorias">
+                        <a href="fidelidade.html" class="menu_links">Fidelidade</a>
+                    </li>
+                    <li class="lista_categorias">
+                        <a href="cadastro.html" class="menu_links">Cadastrar</a>
+                    </li>
+                    <!--conta
+                    <li class="lista_categorias">
+                        <a href="perfil.html" class="menu_links">Sua conta</a>
+                    </li>
+                    -->
+                </ul>
+            </nav>
+         </header>
+
+         <main class="cadastro_container" aria-label="Formulário de cadastro">
+            <h2>Cadastre-se no Raízes do Nordeste!</h2>
+            <p>Preencha o formulário abaixo para criar sua conta e aproveitar todas as vantagens do nosso programa de fidelidade.</p>
+            <form class="cadastro_formulario"  form action="#">
+                <label for="nome" class="cadastro_label">Nome:</label>
+                <input type="text" id="nome" name="nome" class="cadastro_input" required  placeholder="Seu nome">
+            
+                <label for="email" class="cadastro_label">Email:</label>
+                <input type="email" id="email" name="email" class="cadastro_input" required placeholder="seuemail@exemplo.com">
+            
+                <label for="telefone" class="cadastro_label">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" class="cadastro_input" required  placeholder="(00) 00000-0000">
+                <label for="senha" class="cadastro_label">Senha:</label>
+                <input type="password" id="senha" name="senha" class="cadastro_input" required placeholder="Crie uma senha">
+
+
+            <div class="cadastro_termos">
+                <input type="checkbox" id="termos" name="termos" required>
+                <label for="termos">Li e aceito os <a href="#">termos e condições</a></label>
+                <button type="submit" class="cadastro_botao">Cadastrar</button>
+            </form>
+
+         </main>
+    
+
+
+
+        <footer class="rodape">
+            <p class="rodape_marca">Raízes do Nordeste</p>
+            <p class="rodape_texto">O sabor da nossa história no seu prato.</p>
+            <p class="rodape_dados">
+                <a href="#">Privacidade e dados</a> - Projeto para fins acadêmicos
+            </p>
+            <p class="rodape_copy">© 2026 - Raízes do Nordeste | Todos os direitos reservados</p>
+        </footer>
+    </body>   
+
+</html>

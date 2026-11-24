@@ -44,7 +44,7 @@
          <main class="cadastro_container" aria-label="Formulário de cadastro">
             <h2>Cadastre-se no Raízes do Nordeste!</h2>
             <p>Preencha o formulário abaixo para criar sua conta e aproveitar todas as vantagens do nosso programa de fidelidade.</p>
-            <form class="cadastro_formulario"  form action="#">
+            <form class="cadastro_formulario"  action="#">
                 <label for="nome" class="cadastro_label">Nome:</label>
                 <input type="text" id="nome" name="nome" class="cadastro_input" required  placeholder="Seu nome">
             
@@ -59,10 +59,11 @@
 
             <div class="cadastro_termos">
                 <input type="checkbox" id="termos" name="termos" required>
-                <label for="termos">Li e aceito os <a href="#">termos e condições</a></label>
+                <label for="termos">Li e aceito os <button type="button" id="abrir_termos" class="termos_link">termos e condições</button></label>
+                </div>
                 <button type="submit" class="cadastro_botao">Cadastrar</button>
             </form>
-            </div>
+
 
          </main>
 
@@ -80,18 +81,21 @@
                 <p>Respeitamos a sua privacidade. Saiba como os seus dados são utilizados:</p>
 
                <div class="termos_item">
-                <h3>Finalidade</h3>
-                <p>Os dados são utilizados para seu cadastro, atendimento, entrega de pedido, pagamento e acúmulo de pontos em nosso programa de fidelidade.</p>
-
-                <div class="termos_item"></div>
-                <h3>Controle</h3>
-                <p>O cliente pode solicitar a exclusão dos dados de sua conta.</p>
+                    <h3>Finalidade</h3>
+                    <p>Os dados são utilizados para seu cadastro, atendimento, entrega de pedido, pagamento e acúmulo de pontos em nosso programa de fidelidade.</p>
+               </div>
+                <div class="termos_item">
+                    <h3>Controle</h3>
+                    <p>O cliente pode solicitar a exclusão dos dados de sua conta.</p>
+               </div>
 
                 <div class="termos_item">
                     <h3>Segurança</h3>
                     <p>Os dados são utilizados somente para as finalidades informadas. As informações de pagamento devem ser protegidas e tratadas por meios seguros.</p>
                 </div>
-
+                    <button type="button" class="termos_fechar" id="fechar_termos">
+                    Entendi
+                    </button>
                </div> 
             </div>
             
@@ -109,5 +113,5 @@
             <p class="rodape_copy">© 2026 - Raízes do Nordeste | Todos os direitos reservados</p>
         </footer>
     </body>   
-
+<script src="scripts/cadastro.js" defer></script>
 </html>

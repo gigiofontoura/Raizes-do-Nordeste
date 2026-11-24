@@ -12,7 +12,7 @@
 .cadastro_container h2{
     font-size: 1.5rem;
     margin-bottom: 15px;
-    color: var(--marrom-escuro);
+    color: var(--verde-escuro);
     font-family: var(--fonte-texto);
     text-align: center;
 }
@@ -53,15 +53,18 @@
 }
 
 .cadastro_botao{
+    display: block;
+    align-items: stretch;
     padding: 10px;
     background-color: var(--marrom-escuro);
     color: var(--branco);
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
     font-weight: bold;
     font-family: inherit;
-    align-self: center;
+    text-align: center;
+
 }
 .cadastro_botao:hover{
     background-color: var(--hover);
@@ -70,7 +73,7 @@
 .cadastro_input{
     padding: 10px;
     border: 1px solid var(--marrom-escuro);
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: var(--branco);
     color: var(--marrom-escuro);
     font-family: inherit;
@@ -98,6 +101,7 @@
     color: var(--verde-escuro);
     font-size: 1.2rem;
     margin-bottom: 12px;
+    font-weight: bold;
 }
 
 .container-anonimo p {
@@ -118,7 +122,87 @@
     transition: background-color 0.3s ease;
 }
 
-.botao_anonimo {
+.botao_anonimo:hover {
     background-color: var(--hover);
 }
 
+
+.termos_janela {
+    width: 90%;
+    max-width: 450px;
+    max-height: 85vh;
+    border: none;
+    border-radius: 20px;
+    padding: 0;
+    background-color: var(--branco);
+    color: var(--marrom-escuro);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+}
+
+.termos_janela::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+}
+.termos_privacidade {
+    padding: 25px;
+    font-family: var(--fonte-texto);
+}
+
+.termos_privacidade h2 {
+    color: var(--verde-escuro);
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.termos_privacidade > p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.termos_item {
+    background-color: #f5f0e7;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.termos_item h3 {
+    color: var(--verde-escuro);
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+}
+
+.termos_item p {
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+
+.termos_fechar {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: var(--marrom-escuro);
+    color: var(--branco);
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.termos_fechar:hover {
+    background-color: var(--hover);
+}
+
+.termos_link {
+    background: none;
+    border: none;
+    padding: 0;
+    color: var(--verde-escuro);
+    text-decoration: underline;
+    font: inherit;
+    cursor: pointer;
+}

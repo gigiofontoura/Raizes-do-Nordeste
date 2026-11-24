@@ -1,0 +1,115 @@
+
+@keyframes animacao {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+.pagina_inicial {
+    padding: 0 20px;
+}
+
+.container_inicial {
+    max-width: 800px;
+    margin: 40px auto 60px;
+    padding: 48px 40px;
+    background-color: var(--branco);
+    border-radius: var(--bordas);
+    box-shadow: 0 6px 18px rgba(73, 53, 36, 0.18);
+    text-align: center;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    animation: animacao 1s ease-out;  
+}
+
+
+.container_imagem {
+    position: relative;
+    min-height: 320px;
+}
+
+.container_imagem img {
+    position: absolute;        
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;          
+    object-position: center;
+    display: block;
+}
+
+.titulo_inicial {
+    margin: 0 0 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: clamp(1.9rem, 4vw, 2.7rem);   
+    line-height: 1.2;
+    font-weight: bold;
+    color: var(--marrom-escuro);
+}
+
+.texto_inicial,
+.descricao {
+    margin: 0 0 16px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #5b4636;
+}
+
+.descricao {
+    margin-bottom: 32px;
+}
+
+
+.botao_cardapio,
+.botao_fidelidade {
+    display: inline-block;
+    margin: 6px;
+    border-radius: 999px;
+    font-weight: 700;
+    text-decoration: none;
+    border: 2px solid var(--marrom-escuro);
+}
+
+
+.botao_cardapio {
+    padding: 18px 44px;
+    font-size: 1.15rem;
+    background-color: var(--marrom-escuro);
+    color: var(--branco);
+}
+
+.botao_cardapio:hover {
+    background-color: var(--hover);
+}
+
+.botao_fidelidade {
+    padding: 16px 32px;
+    font-size: 1rem;
+    background-color: transparent;
+    color: var(--marrom-escuro);
+}
+
+.botao_fidelidade:hover {
+    background-color: var(--hover);
+    color: var(--branco);
+}
+
+.botao_cardapio:focus-visible,
+.botao_fidelidade:focus-visible {
+    outline: 3px solid #a85a1a;
+    outline-offset: 3px;
+}
+
+
+
+@media (max-width: 600px) {
+    .container_inicial {
+        padding: 32px 20px;
+        margin-top: 24px;
+    }
+
+    .botao_cardapio,
+    .botao_fidelidade {
+        display: block;
+        margin: 10px 0;
+    }
+}

@@ -1,4 +1,4 @@
- 
+
 h2{
     display: block;
     text-align: center;
@@ -32,7 +32,7 @@ h2{
 #fidelidade_botao{
     padding: 12px 28px;
     border: none;
-    border-radius: 40px;
+    border-radius: var(--bordas);
     background-color: var(--marrom-escuro);
     color: var(--branco);
     font-weight: 600;
@@ -41,7 +41,8 @@ h2{
 }
 
 #fidelidade_botao:hover {
-    background-color: #331F16;
+    background-color: var(--hover);
+
 }
  
 .cadastro_botao {

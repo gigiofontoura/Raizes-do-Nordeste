@@ -3,6 +3,7 @@
 @import url("styles/stylemenu.css");
 @import url("styles/fidelidade.css");
 @import url("styles/cadastro.css");
+@import url("styles/index.css");
 
 :root {
     --marrom: #AFA099;
@@ -11,10 +12,15 @@
     --verde-escuro: #365B57;
     --tamanho-pratos: 200px;
     --fonte-texto: Georgia, 'Times New Roman', Times, serif;
+    --hover:#a8785f;
+    --bordas: 8px;
+    --bege: #f0e1c6;
 }
 
 body{
     background-color: var(--marrom);
 
 }
+
+
 
